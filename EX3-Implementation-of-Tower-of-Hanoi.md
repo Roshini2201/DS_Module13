@@ -34,51 +34,7 @@ To write a C program to implement Tower of Hanoi
 
 ## Program:
 ```
-Program to implement Tower of Hanoi
-Developed by: ROSHINI S
-RegisterNumber: 212223240142
 
-#include<stdio.h>
-void TOH(int n,char x,char y,char z)
-{
-if(n>0)
-{
-TOH(n-1,x,z,y);
-printf("%c to %c",x,y);
-printf("\n");
-TOH(n-1,z,y,x);
-}
-}
-int main()
-{
-int n=2; 
-TOH(n,'A','B','C');
-}
-```
-
-## Output:
-![image](https://github.com/user-attachments/assets/db211b62-e5f7-40b2-ab7f-39ae2f56877b)
-
-
-## Result:
-Thus, the C program to implement Tower of Hanoi using recursion is implemented successfully.
-
-void TOH(int n,char x,char y,char z)
-{
-if(n>0)
-{
-TOH(n-1,x,z,y);
-printf("%c to %c",x,y);
-printf("\n");
-TOH(n-1,z,y,x);
-}
-}
-int main()
-{
-int n=2; 
-TOH(n,'A','B','C');
-}
-```
 
 ## Output:
 ![image](https://github.com/user-attachments/assets/db211b62-e5f7-40b2-ab7f-39ae2f56877b)
